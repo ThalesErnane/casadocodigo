@@ -23,7 +23,7 @@ public class Usuario implements UserDetails {
 	private String senha;
 	private String nome;
 	
-	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
+	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST) // ao persist o usuário, persist a role
 	private List<Role> roles = new ArrayList<>();
 
 	public String getEmail() {

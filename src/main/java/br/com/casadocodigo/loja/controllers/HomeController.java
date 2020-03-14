@@ -36,7 +36,7 @@ public class HomeController {
 		return modelAndView;
 	}
 	
-	@Transactional
+	@Transactional // este método vai ser transactional 
 	@ResponseBody
 	@RequestMapping("/url-magica-maluca-oajksfbvad6584i57j54f9684nvi658efnoewfmnvowefnoeijn")
 	public String urlMagicaMaluca() {
