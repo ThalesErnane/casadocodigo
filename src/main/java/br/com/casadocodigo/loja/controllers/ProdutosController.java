@@ -63,7 +63,7 @@ public class ProdutosController {
 		
 		redirectAttributes.addFlashAttribute("message", "Produto cadastrado com sucesso!");
 		
-		return new ModelAndView("redirect:produtos");
+		return new ModelAndView("redirect:/produtos");
 	}
 	
 	@RequestMapping( method=RequestMethod.GET)
